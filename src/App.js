@@ -28,7 +28,7 @@ function App() {
         <Routes>
             <Route path='/auth/login' element={<Login/>}/>
             <Route path='/auth/registration' element={<RegistrationComponent/>}/>
-            <Route path='/courses' element={<CoursesComponent/>}/>
+            <Route path='/' element={<CoursesComponent/>}/>
             <Route path='/course1' element={<CourseOne/>}/>
             <Route path='/forgotpass' element={<ForgotPassword/>}/>
             <Route path='/sendMessage' element={<SendMessage/>}/>

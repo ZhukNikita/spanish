@@ -40,9 +40,7 @@ export default function CourseOne(){
     ]
     const onClick = ()=>{
         setMore(lessons.length)
-        window.scrollTo(0 , 1000)
     }
-    console.log()
     return(
         <div className={styles.body}>
             <NavBar bcColor={'#179C54'} logo={2}/>
