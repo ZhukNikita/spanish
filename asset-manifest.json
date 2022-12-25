@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spanish/courses/static/css/main.420419cd.css",
+    "main.js": "/spanish/courses/static/js/main.7793a43b.js",
+    "static/media/Logo1.png": "/spanish/courses/static/media/Logo1.f048807b341454a63fab.png",
+    "static/media/Logo2.png": "/spanish/courses/static/media/Logo2.cedb43ed2fd3de02d754.png",
+    "index.html": "/spanish/courses/index.html",
+    "main.420419cd.css.map": "/spanish/courses/static/css/main.420419cd.css.map",
+    "main.7793a43b.js.map": "/spanish/courses/static/js/main.7793a43b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.420419cd.css",
+    "static/js/main.7793a43b.js"
+  ]
+}
