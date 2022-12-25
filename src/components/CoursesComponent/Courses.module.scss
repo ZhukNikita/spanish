@@ -1,0 +1,37 @@
+.body{
+  width: 100%;
+  min-height: 844px;
+  background-color: #E8620C;
+  .title{
+    margin-top: 130px;
+    text-align: center;
+    color: #FFFCD2;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    padding: 0 44px;
+  }
+  .courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 40px;
+  }
+  .course{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    border-radius: 10px;
+    color: #FFFCD2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #179C54;
+    width: 244px;
+    height: 119px;
+    text-decoration: none;
+  }
+}

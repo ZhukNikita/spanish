@@ -1,0 +1,78 @@
+@mixin flex($position , $content){
+  display: flex;
+  align-items: $position;
+  justify-content: $content;
+}
+.body{
+  width: 100%;
+  margin-top: 140px;
+  @include flex(center, start);
+  flex-direction: column;
+  .title{
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .recover{
+    width: 350px;
+    height: 100%;
+    @include flex(center, start);
+    flex-direction: column;
+    gap : 2rem;
+  }
+  .password{
+    width: 100%;
+    @include flex(center, center);
+    flex-direction: column;
+    position: relative;
+  }
+  form{
+    @include flex(center, center);
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+  .emailErrors{
+    margin-top: 5px;
+    @include flex(center , left);
+    gap: 5px;
+    font-size: 11px;
+    padding: 2px 12px;
+    width: 80%;
+    color: red;
+  }
+  .emailLabel{
+    position: absolute;
+    top: -17px;
+    left: 30px;
+    font-size: 13px;
+  }
+  input{
+    padding: 7px 12px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 4px;
+    width: 80%;
+    border: 1px solid lightgray;
+  }
+  .inputError{
+    border-color: red;
+    background: #fff2f3;
+  }
+  .inputError::placeholder{
+    color: red;
+  }
+  button{
+    background-color: white;
+    border: 1px solid #E8620C;
+    padding: 7px 12px;
+    border-radius: 4px;
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+    color: #E8620C;
+    font-size: 13px;
+
+  }
+
+}

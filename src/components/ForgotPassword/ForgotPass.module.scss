@@ -1,0 +1,68 @@
+@mixin flex($position , $content){
+  display: flex;
+  align-items: $position;
+  justify-content: $content;
+}
+.body{
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 120px;
+  text-align: center;
+  .title{
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  form{
+    @include flex(center , center);
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .email{
+    width: 100%;
+    @include flex(center, center);
+    flex-direction: column;
+    position: relative;
+    input{
+      padding: 7px 12px;
+      outline: none;
+      height: 32px;
+      font-family: 'Raleway', sans-serif;
+      border-radius: 4px;
+      width: 80%;
+      border: 1px solid lightgray;
+    }
+  }
+  .emailErrors{
+    margin-top: 5px;
+    @include flex(center , left);
+    gap: 5px;
+    font-size: 11px;
+    padding: 2px 12px;
+    width: 80%;
+    color: red;
+  }
+  .emailLabel{
+    position: absolute;
+    top: -17px;
+    left: 30px;
+    font-size: 13px;
+  }
+  .inputError{
+    border-color: red;
+    background: #fff2f3;
+  }
+  .inputError::placeholder{
+    color: red;
+  }
+  .button{
+    width: 87%;
+    border: 1px solid #E8620C;
+    background: none;
+    color: #E8620C;
+    padding: 12px 0px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+  }
+}
