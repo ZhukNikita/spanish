@@ -47,6 +47,9 @@
       cursor: pointer;
       transition: height 0.3s ease;
       color: black;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
       hr{
         margin: 0;
         border:none;
