@@ -79,7 +79,7 @@ export default class Store{
             console.log(e.response?.data?.message)
         }
     }
-    async checkAuth(){
+    async  checkAuth(){
         this.setLoading(true)
         try {
             const response = await axios.get(`${API_URL}/refresh` , {withCredentials:true})

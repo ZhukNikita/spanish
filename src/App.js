@@ -22,7 +22,6 @@ function App() {
             store.checkAuth()
         }
     },[])
-
     return (
     <div className="App">
         <Routes>
