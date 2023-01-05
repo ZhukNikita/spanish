@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-export const API_URL = `http://localhost:5000/api`;
+export const API_URL = `https://mysterious-fjord-49810.herokuapp.com/api`;
 
 const $api = axios.create({
     withCredentials:true,

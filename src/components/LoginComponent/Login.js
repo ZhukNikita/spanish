@@ -14,7 +14,7 @@ import NavBar from "../NavBar/NavBar";
      const [emailError, setEmailError] = useState('Будь ласка, введіть адресу електронної пошти.')
      const [passwordError, setPasswordError] = useState('Будь ласка, введіть пароль')
      if(store.isAuth){
-             return <Navigate to='/courses'/>
+             return <Navigate to='/'/>
      }
 
 

@@ -18,7 +18,7 @@ function MobileMenu({setIsOpen}) {
                 <Link to='/' onClick={()=>setIsOpen(false)}>Усі курси</Link>
                 <Link to={store.isAuth?'/cabinet':'/auth/login'} onClick={()=>setIsOpen(false)}>Мій кабінет</Link>
                 <Link to='/AboutUs' onClick={()=>setIsOpen(false)}>Про нас</Link>
-                <Link to='/Questions' onClick={()=>setIsOpen(false)}>Відгуки</Link>
+                <Link to='/feedbacks' onClick={()=>setIsOpen(false)}>Відгуки</Link>
                 {
                     store.isAuth? <button onClick={logout}>Вийти</button>
                         : <Link to='/auth/login'>Увійти</Link>

@@ -1,9 +1,9 @@
 .body{
-  width:523px;
   height:100%;
-  transform: translate(-110px, 33px);
+  overflow: hidden;
 
   .slide{
+    margin: 33px 97px;
     display:flex;
     align-items:center;
     flex-direction:column;

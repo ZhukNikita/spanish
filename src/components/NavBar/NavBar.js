@@ -13,7 +13,7 @@ import {Link} from "react-router-dom";
      return(
         <div className={styles.body}>
             <div className={styles.mobileNav} style={{backgroundColor: bcColor}}>
-                <Link to='/courses'><img src={logo === 1?logo1:logo2} alt="logo" width='31%' height='31%'/></Link>
+                <Link to='/'><img src={logo === 1?logo1:logo2} alt="logo" width='27%' height='27%'/></Link>
                 <div></div>
                 <MenuIcon sx={{width:'35px' , height:'35px' , color:'#FFFCD2'}} onClick={()=>setIsOpen(true)}/>
             </div>

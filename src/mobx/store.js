@@ -3,7 +3,8 @@ import AuthServices from "../service/AuthServices";
 import axios from "axios";
 import {API_URL} from "../axios";
 export default class Store{
-    user = {}
+    user = {};
+    feedbacks = [];
     isAuth = false;
     isLoading = false;
     errors = '';
@@ -15,6 +16,9 @@ export default class Store{
     }
     setUser(user){
         this.user = user;
+    }
+    setFeedbacks(feedbacks){
+        this.feedbacks = feedbacks;
     }
     setErrors(error){
         this.errors = error;
@@ -86,6 +90,19 @@ export default class Store{
         catch (e){
             console.log(e.response?.data?.message)
         }finally {
+            this.setLoading(false)
+        }
+    }
+    async getFeedbacks(){
+        this.setLoading(true)
+        try{
+            const feedbacks = await axios.get(`${API_URL}/feedbacks`, {withCredentials:true})
+            this.setFeedbacks(feedbacks.data)
+        }
+        catch (e) {
+            console.log(e.response?.data?.message)
+        }
+        finally {
             this.setLoading(false)
         }
     }

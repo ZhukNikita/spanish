@@ -1,4 +1,3 @@
-import {useState} from "react";
 import styles from './RateSlider.module.scss'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
@@ -6,35 +5,7 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/scss';
-const style = {
-    width:'165px',
-    height:'180px',
-    backgroundColor:'#E8620C',
-    display:'flex',
-    alignItems:'center',
-    justifyContent:'center',
-    flexDirection:'column',
-    borderRadius:'20px',
-    gap:'10px',
-    overflow:'hidden'
 
-}
-const priceStyle = {
-    fontStyle:'normal',
-    fontWeight: '600',
-    fontSize: '30px',
-    lineHeight: '35px',
-    margin:'0',
-    color:'#FFFFFF'
-}
-const nameStyle = {
-    fontStyle:'normal',
-    fontWeight: '400',
-    fontSize: '20px',
-    lineHeight: '23px',
-    margin:'0',
-    color:'#FFFFFF'
-}
 export default () => {
     const slides = [
         {
@@ -56,13 +27,11 @@ export default () => {
     return (
         <Swiper
             className={styles.body}
-            spaceBetween={21}
-            slidesPerView={2.5}
+            spaceBetween={5}
+            slidesPerView={2}
             initialSlide={1}
         >
-            <SwiperSlide>
 
-            </SwiperSlide>
             <SwiperSlide className={styles.slide}>
                 <div className={styles.price}>
                     <p className={styles.name}>{slides[0]?.name}</p>
@@ -80,7 +49,7 @@ export default () => {
 
                 </ul>
             </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
+            <SwiperSlide className={styles.slide} style={{margin:'33px 0px'}}>
                 <div className={styles.price}>
                     <p className={styles.name}>{slides[1]?.name}</p>
                     <h4 className={styles.priceText}>{slides[1]?.price}</h4>
@@ -96,7 +65,7 @@ export default () => {
                     <li style={{textDecoration:'line-through'}}><CancelIcon sx={{width:'13px',height:'13px'}}/> Lorem ipsum dolor sit</li>
                 </ul>
             </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
+            <SwiperSlide className={styles.slide} style={{marginLeft:'0px'}}>
                 <div className={styles.price}>
                     <p className={styles.name}>{slides[2]?.name}</p>
                     <h4 className={styles.priceText}>{slides[2]?.price}</h4>
@@ -113,7 +82,6 @@ export default () => {
                 </ul>
             </SwiperSlide>
             <SwiperSlide>
-
             </SwiperSlide>
         </Swiper>
     );
